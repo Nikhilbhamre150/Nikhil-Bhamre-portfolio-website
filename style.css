@@ -1,0 +1,214 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+
+background:
+linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
+url("images/Lamborghini_Temerario.webp");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+color:white;
+line-height:1.6;
+}
+
+#bg{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+
+}
+
+header{
+
+text-align:center;
+padding:120px 20px;
+
+}
+
+header h1{
+
+font-size:40px;
+margin-bottom:10px;
+color:#00eaff;
+
+}
+
+header p{
+
+margin-bottom:30px;
+
+}
+
+.social{
+
+display:flex;
+justify-content:center;
+gap:20px;
+
+}
+
+.social img{
+
+width:45px;
+height:45px;
+padding:8px;
+background:#1e293b;
+border-radius:10px;
+transition:0.3s;
+
+}
+
+.social img:hover{
+
+transform:scale(1.15);
+
+}
+
+section{
+
+max-width:1000px;
+margin:auto;
+padding:80px 20px;
+
+}
+
+section h2{
+
+text-align:center;
+margin-bottom:40px;
+
+}
+
+.about p{
+
+text-align:center;
+max-width:700px;
+margin:auto;
+
+}
+
+.skill-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:25px;
+
+}
+
+.skill-grid div{
+
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+text-align:center;
+transition:0.3s;
+
+}
+
+.skill-grid div:hover{
+
+transform:scale(1.1);
+
+}
+
+.skill-grid img{
+
+width:40px;
+margin-bottom:10px;
+
+}
+
+.project-card{
+
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+max-width:600px;
+margin:auto;
+text-align:center;
+
+}
+
+.project-card img{
+
+width:100%;
+border-radius:10px;
+
+}
+
+.project-card a{
+
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#00eaff;
+color:black;
+border-radius:20px;
+text-decoration:none;
+
+}
+
+.certificates{
+
+text-align:center;
+
+}
+
+.certificates img{
+
+width:320px;
+margin:10px;
+border-radius:10px;
+
+}
+
+.services ul{
+
+max-width:500px;
+margin:auto;
+list-style:none;
+
+}
+
+.services li{
+
+background:#1e293b;
+padding:15px;
+margin:10px 0;
+border-radius:10px;
+
+}
+
+.contact{
+
+text-align:center;
+
+}
+
+@media(max-width:768px){
+
+.skill-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.certificates img{
+
+width:100%;
+
+}
+
+}
